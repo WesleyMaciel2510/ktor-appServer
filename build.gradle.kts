@@ -7,9 +7,10 @@ plugins {
     id("io.ktor.plugin") version "2.3.12"
     //Update Libraries
     id("com.github.ben-manes.versions") version "0.51.0"
+    //use ./gradlew dependencyUpdates
 }
 
-group = "example.com"
+group = "ktorAppServer.com"
 version = "0.0.1"
 
 application {
