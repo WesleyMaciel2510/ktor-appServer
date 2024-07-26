@@ -1,5 +1,8 @@
 .gradle
-build/
+# Ignore everything in the build directory
+/build/*
+# Include the JAR file in build/libs
+!build/libs/com.ktor-app-server-all.jar
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
