@@ -22,6 +22,14 @@ fun Application.configureSecurity() {
         form(name = "myauth2") {
             userParamName = "user"
             passwordParamName = "password"
+            validate { credentials ->
+                //if (credentials.name == credentials.password) {
+                if (credentials.name == "wesley.2510" && credentials.password == "test123") {
+                    UserIdPrincipal(credentials.name)
+                } else {
+                    null
+                }
+            }
             challenge {
                 /**/
             }
