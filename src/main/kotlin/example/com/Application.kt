@@ -11,8 +11,8 @@ import io.ktor.server.util.*
 import io.ktor.server.plugins.statuspages.*
 
 fun main(args: Array<String>) {
-    io.ktor.server.netty.EngineMain.main(args)
-    //embeddedServer(Netty, port = 8080, module = Application::module).start(wait = true)
+    //io.ktor.server.netty.EngineMain.main(args)
+    embeddedServer(Netty, port = 8080, module = Application::module).start(wait = true)
 }
 
 fun Application.module() {
