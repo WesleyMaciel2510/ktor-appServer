@@ -39,3 +39,5 @@ out/
 # But not the JAR file inside build/libs
 !/build/libs/
 !/build/libs/com.ktor-app-server-all.jar
+# Do not commit Keys directory
+/keys/*
